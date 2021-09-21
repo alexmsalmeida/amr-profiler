@@ -16,6 +16,7 @@ git clone https://github.com/alexmsalmeida/amr-profiler.git
 1. Edit the configuration file [`config/config.yml`](config/config.yml).
     - `input_file`: TSV file with paths to forward and reverse metagenomic reads to analyse (ending _1.fastq.gz and _2.fastq.gz).
     - `output_dir`: Directory to save output results.
+    - `threshold`: Coverage and identity threshold for detecting gene presence (Default: `0.95`)
     - `ncores`: Number of cores to use for the analyses.
 
 2. (option 1) Run the pipeline locally (adjust `-j` based on the number of available cores)

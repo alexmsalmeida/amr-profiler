@@ -72,6 +72,7 @@ rule groot_main:
         classes = OUTPUT_DIR+"/runs/{sample}/{sample}_amr_classes.tsv"
     params:
         log = OUTPUT_DIR+"/runs/{sample}/groot.log",
+        threshold = config['threshold'],
         res_db = "scripts/res_classes.tsv"
     conda:
         "config/environment.yml"
@@ -79,7 +80,7 @@ rule groot_main:
         ncores = ncores
     shell:
         """
-        groot align -p {resources.ncores} -t 0.95 -i {input.db} -f {input.fwd},{input.rev} -g {output.graph} --log {params.log} | groot report -c 0.95 --log {params.log} > {output.report}
+        groot align -p {resources.ncores} -t {params.threshold} -i {input.db} -f {input.fwd},{input.rev} -g {output.graph} --log {params.log} | groot report -c {params.threshold} --log {params.log} > {output.report}
         python scripts/parse_groot-report.py {params.res_db} {output.report}
         """
 
