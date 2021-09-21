@@ -1,6 +1,15 @@
-# TSV with list of paired-end fastq files
+# Input TSV file with paths to paired-end reads (ending in _1.fastq.gz and _2.fastq.gz, respectively)
 
 input_file: "/hps/nobackup2/production/metagenomics/aalmeida/project_latinbiota/amr_profiles/fastqs.tsv"
+
+# Output directory to store results
+
 output_dir: "/hps/nobackup2/production/metagenomics/aalmeida/project_latinbiota/amr_profiles"
+
+# Threshold to determine gene presence
+
 threshold: 0.95
+
+# Number of CPU cores to use
+
 ncores: 4
