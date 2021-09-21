@@ -1,4 +1,4 @@
-# AMR-profiler - Characterizing antibiotic resistance in metagenomes
+# Characterizing antibiotic resistance genes in metagenomes
 
 This is a Snakemake workflow relying on [GROOT](https://github.com/will-rowe/groot) for profiling antibiotic resistance genes in shotgun metagenomics data. It uses the `groot-db`, a reference database combining all sequences in ResFinder, ARG-annot and CARD clustered at 90% identity.
 
@@ -14,7 +14,7 @@ git clone https://github.com/alexmsalmeida/amr-profiler.git
 ## How to run
 
 1. Edit the configuration file [`config/config.yml`](config/config.yml).
-    - `input_file: TSV file with paths to forward and reverse metagenomic reads to analyse (ending _1.fastq.gz and _2.fastq.gz).
+    - `input_file`: TSV file with paths to forward and reverse metagenomic reads to analyse (ending _1.fastq.gz and _2.fastq.gz).
     - `output_dir`: Directory to save output results.
     - `ncores`: Number of cores to use for the analyses.
 
