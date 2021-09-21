@@ -1,0 +1,8 @@
+name: groot
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - groot==1.1.2
+  - bbmap
+  - biopython

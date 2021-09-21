@@ -1,0 +1,19 @@
+{
+ "__default__": {
+  "jobname": "{rule}.{wildcards}",
+  "cores": 1,
+  "mem": 8000,
+  "project": "default",
+  "outfile": /dev/null
+ },
+ "setup_files": {
+  "cores": "{resources.ncores}",
+  "mem": 20000,
+  "outfile": "{OUTPUT_DIR}/runs/{wildcards.sample}/setup.log"
+ },
+ "groot_main": {
+  "cores": "{resources.ncores}",
+  "mem": 20000,
+  "outfile": "{OUTPUT_DIR}/runs/{wildcards.sample}/groot.log"
+ }
+}
