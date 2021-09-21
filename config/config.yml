@@ -2,4 +2,5 @@
 
 input_file: "/hps/nobackup2/production/metagenomics/aalmeida/project_latinbiota/amr_profiles/fastqs.tsv"
 output_dir: "/hps/nobackup2/production/metagenomics/aalmeida/project_latinbiota/amr_profiles"
+threshold: 0.95
 ncores: 4
