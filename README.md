@@ -1,4 +1,4 @@
-# Characterizing antibiotic resistance genes in metagenomes
+# Characterizing AMR genes in metagenomes
 
 This is a Snakemake workflow relying on [GROOT](https://github.com/will-rowe/groot) for profiling antibiotic resistance genes in shotgun metagenomics data. It uses the `groot-db`, a reference database combining all sequences in ResFinder, ARG-annot and CARD clustered at 90% identity.
 
